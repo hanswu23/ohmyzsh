@@ -128,3 +128,9 @@ if [ ! "$ZSH_THEME" = ""  ]; then
     source "$ZSH/themes/$ZSH_THEME.zsh-theme"
   fi
 fi
+
+alias syum="sudo yum --enablerepo=epel,base,updates"
+#alias vault-stage="VAULT_ADDR=https://vault.stg.cf.wtf:8200 VAULT_CACERT=/home/hwunsch/.vault.d/stage/vault_cachain.pem vault"
+alias vplogin="VAULT_ADDR=https://vault.kernelfire.com:8200  vault login -method=ldap username=hwunsch"
+alias vp="VAULT_ADDR=https://vault.kernelfire.com:8200  vault"
+set -o vi
